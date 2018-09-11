@@ -1,0 +1,233 @@
+/* ==================
+ *  VARIABLES
+ * ================== */
+:root {
+  --red: #E52521;
+  --green: #048117;
+  --green-hover: #097617;
+  --black: #000;
+  --white: #fff;
+  /* #3BA73E */
+  --blue: #5A9CCE;
+  --coin-bottom-gone: -70px;
+  --coin-bottom-appear: 40px;
+}
+/* ==================
+ *  BASE
+ * ================== */
+body {
+  font-family: 'Bangers', cursive;
+  color: var(--color-black);
+  background: var(--blue);
+  height: 100vh;
+}
+.outer-container {
+  background: url("images/background.png");
+  background-size: cover;
+  height: 604px;
+}
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -55px
+}
+h1 {
+  background: var(--red);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+.coin-counter {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+  padding: 10px 10px 10px 20px;
+  background: rgb(0, 0, 0, 0.1);
+  width: 80px;
+  border-radius: 3px;
+}
+.coin-counter img{
+  width: 32px;
+  margin-right: 13px;
+}
+.coin-counter span {
+  font-size: 30px;
+}
+/* ==================
+*  COIN
+* ================== */
+.coin {
+  width: 80px;
+}
+.coin {
+  position: relative;
+  width: 60px;
+  height: 100px;
+}
+.coin img {
+  position: absolute;
+  width: 100%;
+  bottom: var(--coin-bottom-gone);
+}
+.coin.appear img {
+  animation: appear 1.8s cubic-bezier(.87,-.41,.19,1.44);
+  animation-delay: 0.1s;
+}
+/* ==================
+*  BLOCK
+* ================== */
+.block {
+  width: 90px;
+  height: 100px;
+  position: relative;
+}
+.block img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.block.bounce img {
+  animation: bounce 1s cubic-bezier(.87,-.41,.19,1.44);
+  animation-delay: 0.1s;
+}
+/* ==================
+*  MARIO
+* ================== */
+.mario {
+  width: 100px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.mario img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.mario.jump img{
+  animation-name: jump;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(.87,-.41,.19,1.44);
+}
+/* ==================
+*  CONTROL
+* ================== */
+.control {
+  /* margin-top: 20px; */
+  width: 100%;
+}
+button {
+  text-transform: uppercase;
+  background-color: rgb(0, 0, 0, 1);
+  border: 1px solid var(--black);
+  color: var(--white);
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  padding: 8px 5px;
+  width: 100%;
+  background-color: var(--green);
+  border: 1px dotted transparent;
+  border-top: 3px dashed var(--black);
+  border-bottom: 3px dashed var(--black);
+  font-weight: bold;
+  font-size: 18px;
+}
+button:hover {
+  background-color: var(--green-hover);
+}
+button:focus {
+  outline: 0;
+}
+/* ==================
+*  ANIMATION
+* ================== */
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 91px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes appear {
+  0% {
+    bottom: var(--coin-bottom-gone);
+  }
+  50% {
+    bottom: var(--coin-bottom-appear);
+  }
+  90% {
+    bottom: var(--coin-bottom-appear);
+    transform: perspective(600px) rotateY(360deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* ==================
+*  SOCIAL MEDIA
+* ================== */
+.social-media-footer {
+  --font-color: hsl(0, 0%, 50%);
+  --font-size: 0.8rem;
+  font-family: 'Lato', sans-serif;
+}
+.social-columns {
+  display: flex;
+  justify-content: center;
+  font-size: var(--font-size);
+  color: var(--font-color);
+  background: rgb(0, 0, 0, 0.4);
+  margin: -6px auto 0;
+  background: black;
+}
+.social-columns .column {
+  padding: 0.4rem 0.6rem;
+  text-align: center;
+}
+.social-columns a {
+  text-decoration: none;
+  color: var(--font-color);
+  font-weight: normal;
+}
+.social-columns a:hover {
+  text-decoration: underline;
+}
+/* GITHUB */
+.github-code {
+  color: var(--font-color);
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: 0.625rem;
+}
+.github-code a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+.github-code a:hover {
+   text-decoration: underline;
+}
