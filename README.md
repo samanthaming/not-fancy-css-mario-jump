@@ -23,9 +23,7 @@ Or see it live! [here](https://samanthaming.github.io/not-fancy-css-mario-jump/)
 
 # Notes
 
-Here are the general steps to create your own Not Fancy Mario Jump. There's not much JavaScipt logic in this app. Most of the heavy lifting is done through CSS `@keyframes`. JavaScipt is mainly used to apply the animation class when the button is clicked. There
-
-Add 
+Here are the general steps to create your own Not Fancy Mario Jump. There's not much JavaScipt logic in this app. Most of the heavy lifting is done through CSS `@keyframes`. JavaScipt is mainly used to apply the animation class when the button is clicked.
 
 ## 1. Create the `@keyframes` Animation
 
