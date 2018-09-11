@@ -14,12 +14,12 @@ A simple, not fancy at all, CSS animated Mario Jump app.
 
 <br>
 
-Play around with it on [CodePen](https://codepen.io/samanthaming/pen/)  
-Or see it live! [here](https://samanthaming.github.io/not-fancy-mario-jump/)
+Play around with it on [CodePen](https://codepen.io/samanthaming/pen/qMxQBd)  
+Or see it live! [here](https://samanthaming.github.io/not-fancy-css-mario-jump/)
 
 <br>
 
-![App](images/not-fancy-mario-jump.png)
+![App](images/not-fancy-css-mario-jump.png)
 
 # Notes
 

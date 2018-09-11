@@ -17,7 +17,7 @@
     <div class="outer-container">
       <h1>Not Fancy Mario Jump</h1>
       <div class="coin-counter">
-        <img src="images/coin.png" alt="">
+        <img src="images/coin.png" alt="mario coin">
         <span>{{ count }}</span>
       </div>
       <div class="inner-container">
@@ -30,13 +30,13 @@
           :class="['block', {'bounce': isBounce}]"
           @animationend="removeAnimation"
         >
-          <img src="images/block.png">
+          <img src="images/block.png" alt="mario block">
         </div>
         <div
           :class="['mario', {'jump': isJump}]"
           @animationend="isJump = false"
         >
-          <img src="images/mario.png" alt="">
+          <img src="images/mario.png" alt="mario">
         </div>
         <div class="control">
           <button
