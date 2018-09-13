@@ -7,7 +7,6 @@
   --green-hover: #097617;
   --black: #000;
   --white: #fff;
-  /* #3BA73E */
   --blue: #5A9CCE;
   --coin-bottom-gone: -70px;
   --coin-bottom-appear: 40px;
@@ -22,9 +21,9 @@ body {
   height: 100vh;
 }
 .outer-container {
-  background: url("images/background.png");
-  background-size: cover;
-  height: 604px;
+  background: url("images/background.png") repeat-x;
+  background-position-y: 81px;
+  height: 595px;
 }
 .inner-container {
   display: flex;
