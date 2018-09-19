@@ -96,3 +96,9 @@ Once the animation is completed, we'll remove the animation class. We're utilizi
 
 - [MDN: animationend](https://developer.mozilla.org/en-US/docs/Web/Events/animationend)
 - [JSFiddle: Vue Animation Trigger](https://jsfiddle.net/RobertKirsz/muo19o4x/)
+
+# Join the #NotFancyAppChallenge
+
+This is part of they #NotFancyAppChallenge. It's all about learning by doing. The only rule, it must be completed within 24hours. Anything more, it’s too fancy 😜 Join me!
+
+More info here ➡️ [Learn more about the challenge](https://github.com/samanthaming/awesome-notfancyappchallenge)
